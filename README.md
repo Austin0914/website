@@ -5,3 +5,8 @@
 
 ## 學習資源
 * [FULL COURCE](https://www.youtube.com/watch?v=G3e-cpL7ofc&list=WL&index=3&t=4381s)
+
+## 學習紀錄
+|日期|紀錄|內容|
+|-|-|-|
+|3/10|[Day1](Day1)|基礎Html及CSS|
