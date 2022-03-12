@@ -1,0 +1,92 @@
+# Day2
+## padding/margin/hover/shadow/transition
+```html
+<style>
+    .button_test{
+        background-color: green;
+        color: white;
+        transition: padding 0.7s;
+        border: none;
+        padding: 10px;
+    }
+    .button_test:hover{
+        padding: 20px;
+    }
+    .button_A{
+        border: none;
+        background-color: green;
+        color:white;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .button_B{
+        background-color: green;
+        color:white;
+        margin:10px;
+        border: none;
+        padding: 10px;
+        transition: padding 0.5s;
+    }
+    .button_B:hover{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .button_C{
+        background-color: green;
+        color: white;
+        padding:10px;
+        box-shadow: 5px 5px 5px rgba(0,0,0, 0.15);
+        border: none;
+        border-radius: 5px;
+        transition: margin 0.4s;
+    }
+    .button_C:hover{
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+</style>
+
+<button class="button_test">
+    AUSTIN
+</button>
+<p></p>
+<button class="button_A">
+    Back
+</button>
+<a href="https://github.com/Austin0914/website" target="_blanlk">
+    1
+</a>
+<a href="https://github.com/Austin0914/website" target="_blanlk">
+    2
+</a>
+<a href="https://github.com/Austin0914/website" target="_blanlk">
+    3
+</a>
+<a href="https://github.com/Austin0914/website" target="_blanlk">
+    4
+</a>
+<a href="https://github.com/Austin0914/website" target="_blanlk">
+    5
+</a>
+<button class="button_A">
+    Next
+</button>
+<p>
+</p>
+<button class="button_B">
+    One
+</button>
+<button class="button_B">
+    Two
+</button>
+<button class="button_B">
+    Three
+</button>
+<p></p>
+<button class="button_C">
+    SHADOW
+</button>
+```
+## 成果
+![image](https://user-images.githubusercontent.com/87524840/158007573-628bfb4a-493f-4452-bce0-b107affcc0ec.png)
