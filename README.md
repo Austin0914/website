@@ -7,7 +7,7 @@
 * [FULL COURCE](https://www.youtube.com/watch?v=G3e-cpL7ofc&list=WL&index=3&t=4381s)
 
 ## 學習紀錄
-|日期|紀錄|內容|CODE|
-|-|-|-|-|
-|3/10|[Day1](Day1.md)|基礎Html及CSS|[Day1](Day1.html)|
-|3/11|[Day2](Day2.md)|基礎CSS|[Day2](Day2.html)|
+|日期|紀錄|內容|CODE|Video|
+|-|-|-|-|-|
+|3/10|[Day1](Day1.md)|基礎Html及CSS|[Day1](Day1.html)||
+|3/11|[Day2](Day2.md)|基礎CSS|[Day2](Day2.html)|[V2](2022-03-12 14-52-26.mp4)|
