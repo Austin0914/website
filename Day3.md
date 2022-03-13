@@ -1,5 +1,5 @@
 # Day 3
-
+## [1:18:00~1:51:00](https://www.youtube.com/watch?v=G3e-cpL7ofc&t=6743s)
 ## CSS-TextStyle
 ```html
 <style>
