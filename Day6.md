@@ -1,6 +1,6 @@
 # Day 6
 ## [2:35:00~2:47:00](https://www.youtube.com/watch?v=G3e-cpL7ofc&list=WL&index=4&t=4381s)
-## CSS display: inline/inline-block/block/image/input box
+## Html div
 > html file
 ```html
 <!DOCTYPE html>
