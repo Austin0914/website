@@ -48,6 +48,9 @@
 ```
 ## 成果
 ### web
-![image](https://user-images.githubusercontent.com/87524840/158598964-54e74dca-33ad-4b9e-ba3b-d6fa6f7c1355.png)
+![image](https://user-images.githubusercontent.com/87524840/158428342-41f7bf89-d56a-48f0-820d-cfac3fde707e.png)
+### HW-Google Search practice
+![image](https://user-images.githubusercontent.com/87524840/158428535-211ed119-4030-4736-90b4-bdb7d3e80b72.png)
+
 
 
