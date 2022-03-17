@@ -15,3 +15,4 @@
 |3/14|[Day4](Day4.md)|Html-Structure/CSS-stylesheet import/google font|[Day4_html](Day4.html)<br>[Day4_cs](Day4.css)|
 |3/15|[Day5](Day5.md)|CSS display: inline/inline-block/block/image/input box|[Day5](Day5.html)<br>[Day5_GS](Day5_GS.html)|
 |3/16|[Day6](Day6.md)|Html div|[Day6](Day6.html)|
+|3/17|[Day7](Day7.md)|Nested Layouts Technique|[Day7](Day7.html)<br>[Day7_cs](Day7.css)|
