@@ -16,4 +16,4 @@
 |3/15|[Day5](Day5.md)|CSS display: inline/inline-block/block/image/input box|[Day5](Day5.html)<br>[Day5_GS](Day5_GS.html)|
 |3/16|[Day6](Day6.md)|Html div|[Day6](Day6.html)|
 |3/17|[Day7](Day7.md)|Nested Layouts Technique|[Day7](Day7.html)<br>[Day7_cs](Day7.css)|
-|3/18|[Day8](Day8.md)|CSS grid|[Day8](Day8.html)<br>[Day8_hw.html](Day7.css)|
+|3/18|[Day8](Day8.md)|CSS grid|[Day8](Day8.html)<br>[Day8_hw.html](Day8_hw.html)|
