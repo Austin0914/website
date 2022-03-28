@@ -17,6 +17,6 @@
 |3/16|[Day6](Day6.md)|Html div|[Day6](Day6.html)|
 |3/17|[Day7](Day7.md)|Nested Layouts Technique|[Day7](Day7.html)<br>[Day7_cs](Day7.css)|
 |3/18|[Day8](Day8.md)|CSS grid|[Day8](Day8.html)<br>[Day8_hw.html](Day8_hw.html)|
-|3/26|[Day9](Day9.md)|CSS Nested Flexbos|[Day9](Day9.html)|
-|3/27|[Day10](Day10.md)|CSS Nested Flexbos|[Day10](Day10.html)|
-|3/28|[Day11](Day11.md)|CSS Nested Flexbos|[Day11](Day11.html)<br>[Day11-1](Day11-hw.html)<br>[Day11-2](Day11-hw-2.html)|
+|3/26|[Day9](Day9.md)|CSS Nested Flexboxs|[Day9](Day9.html)|
+|3/27|[Day10](Day10.md)|CSS Nested Flexboxs|[Day10](Day10.html)|
+|3/28|[Day11](Day11.md)|CSS Nested Flexboxs|[Day11](Day11.html)<br>[Day11-1](Day11-hw.html)<br>[Day11-2](Day11-hw-2.html)|
