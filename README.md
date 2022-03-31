@@ -5,6 +5,7 @@
 
 ## 學習資源
 * [FULL COURCE](https://www.youtube.com/watch?v=G3e-cpL7ofc&list=WL&index=3&t=4381s)
+* [JavaScript 入門](https://www.youtube.com/watch?v=1pYtVwIAvhY&t=135s)
 
 ## 學習紀錄
 |日期|紀錄|內容|CODE|
