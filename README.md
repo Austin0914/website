@@ -1,4 +1,4 @@
-# Html/CSS 學習之路
+# Html/CSS/Javascript 學習之路
 
 ## 目標
 * 打造出一個，個人部落格
