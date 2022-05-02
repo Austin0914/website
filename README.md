@@ -25,4 +25,4 @@
 |3/30|[Day13](NOTES/Day13.md)|CSS Grid repeat @media|[Day13](CODES/Day13.html)|
 |3/31|[Day14](NOTES/Day14.md)|Javascript Basic|[Day14](CODES/Day14.js)|
 |3/31|[Day14](NOTES/Day14.md)|Javascript Basic|[Day14](CODES/Day14.js)|
-|5/2|[Day15](NOTES/Day15.md|||
+|5/2|[Day15](NOTES/Day15.md)|||
