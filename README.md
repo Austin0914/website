@@ -27,3 +27,4 @@
 |5/2|[Day15](NOTES/Day15.md)|Javascript Basic|NULL|
 |5/3|[Day16](NOTES/Day16.md)|Javascript Basic-2|[Day16](CODES/Day16.js)|
 |5/4|[Day17](NOTES/Day17.md)|Javascript Basic-3|[Day17](CODES/Day17_js_practice.js)<br>[Guess Number](CODES/Day17_guessnumber.js)|
+|5/4|[Day18](NOTES/Day18.md)|Html/CSS review-1|[Day18](CODES/Day18.css)|
