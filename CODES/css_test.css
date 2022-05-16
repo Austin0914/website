@@ -1,0 +1,66 @@
+/*
+inline styling 
+internal styling
+external styling
+
+resverved color
+rgb
+rgba
+hex
+
+css selector
+>universal seclector
+>enlement selector 
+>id selector
+>class selector
+>Grouping Selector
+>Atrribute Selector
+>Pseudo class
+>Pseudo element
+*/
+
+/* universal */
+*{
+    font-size: 100px;
+    color:rgb(144, 144, 238);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* element */
+p{
+    color:lightskyblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* id class*/
+#atc{
+    color:lightpink;
+}
+
+.colorful{
+    color:rebeccapurple;
+}
+.bigtext{
+    font-size: 300px;
+}
+/* grouping */
+h1,h2{
+    font-family: fantasy;
+}
+/* descendant */
+div.NEW a{
+    color:darkorange;
+}
+.but{
+    display: block;
+    color:white;
+    width: 25vw;
+    height: 300px;
+    padding: 20px 40px;
+    margin: 20px;
+    background-color: lightskyblue;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(0,0,0);
+}
+
+.but:hover{
+    background-color: rgba(57, 107, 208, 0.883);
+}
