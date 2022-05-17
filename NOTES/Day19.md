@@ -1,5 +1,6 @@
 # Day19
-## Html/CSS/figma practice 
+## Html/CSS/figma practice
+## box-siziing:border-box
 ## Build an samll website
 <img width="943" alt="image" src="https://user-images.githubusercontent.com/87524840/168790935-3d9243cf-2e6a-4675-8751-f7a275a76452.png">
 
