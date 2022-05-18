@@ -30,3 +30,4 @@
 |5/15|[Day18](NOTES/Day18.md)|Html/CSS review-1|[Day18-CSS](CODES/Day18_css.css)<br>[Day18-Html](CODES/Day18_html.html)|
 |5/16|[Day19](NOTES/Day19.md)|Html/CSS review-web project|[Day19-CSS](CODES/Day19_css.css)<br>[Day19-Html-1](CODES/Day19_html_1.html)<br>[Day19-Html-2](CODES/Day19_html_2.html)|
 |5/15|[Day20](NOTES/Day20.md)|media query/bootstrap/SASS/Html book mark/CSS scroll behavior|NULL|
+|5/15|[Day21](NOTES/Day21.md)|Html/CSS review-web project-2|[Day21-CSS](CODES/Day21_css.css)<br>[Day21-Html-1](CODES/Day21_html_1.html)<br>[Day21-Html-2](CODES/Day21_html_2.html)|
