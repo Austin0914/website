@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+@mixin flexbox ($dir){
+    display: flex;
+    flex-direction: $dir;
+}
+
+@mixin wh ($w,$h) {
+    width: $w;
+    height: $h;
+}
+
+
+.nav {
+    background-color: white;
+    @include flexbox(row);
+    justify-content: space-between;
+    align-items: center;
+    @include wh(100%,60px);
+    .leftbar{
+        @include flexbox(row);
+        align-items: center;
+        .title{
+            padding: 0.5em;
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+        .icon{
+            padding: 0.5em;
+            @include wh(50px,50px);
+        }
+    }
+    .linkbar{
+        a{
+            color: black;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: 700;
+            cursor: pointer;
+            &:hover{
+                background-color: lightblue;
+            }
+        }
+    }
+}
+.tv{
+    @include flexbox(column);
+    justify-content: center;
+    align-items: center;
+    background-color: #0071bc;
+    @include wh(100%,80vh);
+    .big_title{
+        color:white;
+        font-size: 5em;
+        font-weight: 900;
+    }
+    img{
+        @include wh(15em,15em);
+    }
+}
+.itr{
+    @include flexbox(column);
+    @include wh(100%, auto);
+    justify-content: center;
+    align-items: center;
+    
+    .box{
+        margin: 4em 2.5em;
+        @include wh(55vw,auto);
+        @include flexbox(row);
+        justify-content: space-around;
+        align-items: center;
+        img{
+            @include wh(10em, 10em);
+        }
+        .title{
+            padding: 0.5em;
+            // background-color: lightskyblue;
+            // color:rgb(52, 123, 221);
+            // border-radius: 12px;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        .article{
+            @include wh(25vw, 200px);
+            font-size: 1.5em;
+            font-weight: 600;
+            @include flexbox(column);
+            justify-content: center;
+            align-items: center;
+        }
+        .box-2{
+            padding: 2em 5em;
+            @include flexbox(column);
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(211, 211, 211, 0.341);
+            border-radius: 20px;
+        }
+    }
+}
+
+.bottom{
+    background-color: #0071bc;
+    @include wh(100%, 70px);
+    @include flexbox(row);
+    justify-content: center;
+    img{
+        margin:1em;
+        fill: white;
+        @include wh(30px, 30px);
+    }
+}
