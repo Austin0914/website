@@ -35,7 +35,13 @@
   font-family: 'Barlow', sans-serif;
   font-size: 14em;
   color: lightblue;
-  text-shadow: 0 0 10px white,  0 0 20px #0068e6,  0 0 30px #0068e6,  0 0 40px #0068e6, 0 0 50px #0068e6, 0 0 60px #0068e6, 0 0 70px #0068e6;
+  text-shadow: 0 0 10px white, 
+ 0 0 20px #0068e6, 
+ 0 0 30px #0068e6, 
+ 0 0 40px #0068e6,
+ 0 0 50px #0068e6,
+ 0 0 60px #0068e6,
+ 0 0 70px #0068e6;
 }
 
 .main .title .second {
