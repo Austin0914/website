@@ -1,0 +1,203 @@
+@mixin flexbox ($dir) {
+    display: flex;
+    flex-direction: $dir;
+}
+
+@mixin wh ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: black;
+    @include wh(100vw,100vh);
+    @include flexbox(column);
+    justify-content: center;
+    align-items: center;
+    .title{
+        @include flexbox(row);
+        
+        font-family: 'Barlow', sans-serif;
+        font-size: 14em;
+        color:lightblue;
+        text-shadow: 
+            0 0 10px white, 
+            0 0 20px #0068e6, 
+            0 0 30px #0068e6, 
+            0 0 40px #0068e6,
+            0 0 50px #0068e6,
+            0 0 60px #0068e6,
+            0 0 70px #0068e6;
+        .second{
+            margin-left: 0.1em;
+            -webkit-animation: fadeIn ease 0.4s;
+            -moz-animation: fadeIn ease 0.4s;
+            -o-animation: fadeIn ease 0.4s;
+            -ms-animation: fadeIn ease 0.4s;
+            animation: fadeIn ease 0.8s;
+        }
+        .frist {
+            -webkit-animation: fadeIn ease 0.4s;
+            -moz-animation: fadeIn ease 0.4s;
+            -o-animation: fadeIn ease 0.4s;
+            -ms-animation: fadeIn ease 0.4s;
+            animation: fadeIn ease 0.4s;
+        }
+
+        .a {
+            margin-left: 0.1em;
+            -webkit-animation: fadeIn ease 0.4s;
+            -moz-animation: fadeIn ease 0.4s;
+            -o-animation: fadeIn ease 0.4s;
+            -ms-animation: fadeIn ease 0.4s;
+            animation: fadeIn ease 1.2s;
+        }
+
+        .b {
+            margin-left: 0.1em;
+            -webkit-animation: fadeIn ease 0.4s;
+            -moz-animation: fadeIn ease 0.4s;
+            -o-animation: fadeIn ease 0.4s;
+            -ms-animation: fadeIn ease 0.4s;
+            animation: fadeIn ease 1.6s;
+        }
+
+        .c {
+            margin-left: 0.1em;
+            -webkit-animation: fadeIn ease 0.4s;
+            -moz-animation: fadeIn ease 0.4s;
+            -o-animation: fadeIn ease 0.4s;
+            -ms-animation: fadeIn ease 0.4s;
+            animation: fadeIn ease 2s;
+        }
+
+        .d {
+            margin-left: 0.1em;
+            -webkit-animation: fadeIn ease 0.4s;
+            -moz-animation: fadeIn ease 0.4s;
+            -o-animation: fadeIn ease 0.4s;
+            -ms-animation: fadeIn ease 0.4s;
+            animation: fadeIn ease 2.4s;
+        }
+    }
+    .button_nav {
+        position: absolute;
+        bottom:3em;
+        @include flexbox(row);
+        justify-content: center;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            button{
+                @include wh(10vw,auto);
+                padding: 1em 0.3em;
+                margin: 0 1em;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.4em;
+                font-weight: 700;
+                border: none;
+                border-radius: 0.3em;
+                cursor: pointer;
+            }
+            #one {
+                animation: fadeIn ease-in    7s;
+                color:rgb(255, 255, 255);
+                background-color: lightcoral;
+                text-shadow:
+                    0 0 10px rgb(171, 74, 74),
+                    0 0 20px rgb(171, 74, 74),
+                    0 0 30px rgb(171, 74, 74),
+                    0 0 40px rgb(171, 74, 74),
+                    0 0 50px rgb(171, 74, 74),
+                    0 0 60px rgb(171, 74, 74),
+                    0 0 70px rgb(171, 74, 74);
+                box-shadow: 0 0 15px 5px rgb(171, 74, 74);
+            }
+            #two{
+                animation: fadeIn ease-in 7s;
+                color: rgb(255, 255, 255);
+                background-color: lightgreen;
+                text-shadow:
+                    0 0 10px rgb(120, 203, 120),
+                    0 0 20px rgb(120, 203, 120),
+                    0 0 30px rgb(120, 203, 120),
+                    0 0 40px rgb(120, 203, 120),
+                    0 0 50px rgb(120, 203, 120),
+                    0 0 60px rgb(120, 203, 120),
+                    0 0 70px rgb(120, 203, 120);
+                box-shadow: 0 0 15px 5px rgb(120, 203, 120);
+            }
+            #three{
+                animation: fadeIn ease-in 7s;
+                color: rgb(255, 255, 255);
+                background-color: rgb(213, 213, 109);
+                text-shadow:
+                    0 0 10px rgb(234, 234, 161),
+                    0 0 20px rgb(234, 234, 161),
+                    0 0 30px rgb(234, 234, 161),
+                    0 0 40px rgb(234, 234, 161),
+                    0 0 50px rgb(234, 234, 161),
+                    0 0 60px rgb(234, 234, 161),
+                    0 0 70px rgb(234, 234, 161);
+                box-shadow: 0 0 15px 5px rgb(206, 206, 90);
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
