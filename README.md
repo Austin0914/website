@@ -33,3 +33,4 @@
 |5/18|[Day21](NOTES/Day21.md)|Html/CSS review-web project-2|[Day21-CSS](CODES/Day21_css.css)<br>[Day21-Html-1](CODES/Day21_html_1.html)<br>[Day21-scss](CODES/Day21_scss.scss)|
 |5/19|[Day22](NOTES/Day22.md)|Html/CSS review-web project-3 <br>&<br> project-2 optimization|[Day22-CSS](CODES/Day22_css.css)<br>[Day22-Html](CODES/Day22_html.html)<br>[Day22-scss](CODES/Day22_scss.scss)|
 |5/25|[Day23](NOTES/Day23.md)|Figma design-1|NULL|NULL|
+|5/27|[Day24](NOTES/Day30.md)|Presonal Website-first page animation|[Presonal-Web-Code](PresonalWeb)|
