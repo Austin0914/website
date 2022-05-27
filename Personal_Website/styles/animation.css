@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0c0c0c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.animation {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-name: color-change;
+          animation-name: color-change;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  position: relative;
+}
+
+.icon.icon-1.icon-2.icon-3 {
+  width: 40%;
+  height: 40%;
+  -webkit-transform: translate(-10px, 0);
+          transform: translate(-10px, 0);
+}
+
+.icon {
+  z-index: 1;
+}
+
+.icon-1 {
+  z-index: 2;
+}
+
+.icon-1 svg .svg-elem-1 {
+  stroke-dashoffset: 421.3978271484375px;
+  stroke-dasharray: 421.3978271484375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  transition: stroke-dashoffset 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.icon-1 svg.active .svg-elem-1 {
+  stroke-dashoffset: 0;
+}
+
+.icon-1 svg .svg-elem-2 {
+  stroke-dashoffset: 417.07586669921875px;
+  stroke-dasharray: 417.07586669921875px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  transition: stroke-dashoffset 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+}
+
+.icon-1 svg.active .svg-elem-2 {
+  stroke-dashoffset: 0;
+}
+
+.icon-1 svg .svg-elem-4 {
+  stroke-dashoffset: 376.68359375px;
+  stroke-dasharray: 376.68359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.36s;
+  transition: stroke-dashoffset 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.36s;
+}
+
+.icon-1 svg.active .svg-elem-4 {
+  stroke-dashoffset: 0;
+}
+
+.icon-2 {
+  z-index: 3;
+}
+
+.icon-2 svg .svg-elem-1 {
+  stroke-dashoffset: 421.3978271484375px;
+  stroke-dasharray: 421.3978271484375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: stroke-dashoffset 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+
+.icon-2 svg.active .svg-elem-1 {
+  stroke-dashoffset: 842.795654296875px;
+}
+
+.icon-2 svg .svg-elem-2 {
+  stroke-dashoffset: 417.07586669921875px;
+  stroke-dasharray: 417.07586669921875px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.19, 1, 0.22, 1) 0.12s;
+  transition: stroke-dashoffset 1s cubic-bezier(0.19, 1, 0.22, 1) 0.12s;
+}
+
+.icon-2 svg.active .svg-elem-2 {
+  stroke-dashoffset: 834.1517333984375px;
+}
+
+.icon-2 svg .svg-elem-4 {
+  stroke-dashoffset: 376.68359375px;
+  stroke-dasharray: 376.68359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.19, 1, 0.22, 1) 0.36s;
+  transition: stroke-dashoffset 1s cubic-bezier(0.19, 1, 0.22, 1) 0.36s;
+}
+
+.icon-2 svg.active .svg-elem-4 {
+  stroke-dashoffset: 753.3671875px;
+}
+
+.icon-3 {
+  z-index: 4;
+}
+
+.icon-3 svg .svg-elem-1 {
+  stroke-dashoffset: 421.3978271484375px;
+  stroke-dasharray: 421.3978271484375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+  transition: stroke-dashoffset 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+
+.icon-3 svg.active .svg-elem-1 {
+  stroke-dashoffset: 842.795654296875px;
+}
+
+.icon-3 svg .svg-elem-2 {
+  stroke-dashoffset: 417.07586669921875px;
+  stroke-dasharray: 417.07586669921875px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+  transition: stroke-dashoffset 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+}
+
+.icon-3 svg.active .svg-elem-2 {
+  stroke-dashoffset: 834.1517333984375px;
+}
+
+.icon-3 svg .svg-elem-4 {
+  stroke-dashoffset: 376.68359375px;
+  stroke-dasharray: 376.68359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.6s;
+  transition: stroke-dashoffset 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.6s;
+}
+
+.icon-3 svg.active .svg-elem-4 {
+  stroke-dashoffset: 753.3671875px;
+}
+
+.icon-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 6px solid #0C0C0C;
+  position: absolute;
+  top: -10em;
+  left: 47.3%;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  z-index: 5;
+}
+
+@-webkit-keyframes change {
+  0% {
+    background-color: #78BCFC;
+  }
+  25% {
+    background-color: #7EC3C3;
+  }
+  50% {
+    background-color: #82C9C1;
+  }
+  100% {
+    background-color: #69CD89;
+  }
+}
+
+@keyframes change {
+  0% {
+    background-color: #78BCFC;
+  }
+  25% {
+    background-color: #7EC3C3;
+  }
+  50% {
+    background-color: #82C9C1;
+  }
+  100% {
+    background-color: #69CD89;
+  }
+}
+
+@-webkit-keyframes move {
+  to {
+    top: 38%;
+  }
+}
+
+@keyframes move {
+  to {
+    top: 38%;
+  }
+}
+
+@-webkit-keyframes color-change {
+  to {
+    background-color: #0C0C0C;
+  }
+}
+
+@keyframes color-change {
+  to {
+    background-color: #0C0C0C;
+  }
+}
+/*# sourceMappingURL=animation.css.map */
