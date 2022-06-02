@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$bclor: rgb(12, 12, 12);
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: $bclor;
+    font-family: Arial, Helvetica, sans-serif;
+    // overflow: hidden;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3A7DBD;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #30689c;
+}
+
+::-webkit-resizer,
+::-webkit-scrollbar-corner {
+    background-color: #ffffff00;
+}
+
+
+
+@mixin wh($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin flexbox($dir) {
+    display: flex;
+    flex-direction: $dir;
+}
+
+@mixin ja($j, $a) {
+    justify-content: $j;
+    align-items: $a;
+}
+.nav {
+    @include wh(100%, 60px);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    @include flexbox(row);
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+    background-color: $bclor;
+
+    .main-icon {
+        margin: 0px 1em;
+        @include wh(60px, 60px);
+    }
+
+    .left-nav {
+        font-size: 1.2em;
+        @include flexbox(row);
+        @include ja(center, center);
+        .nav-icon {
+            transition: all 0.3s;
+            margin: 0px 0.5em;
+            color: white;
+
+            span.left {
+                color: #3A7DBD;
+                margin-right: 0.7em;
+            }
+
+            span.right {
+                color: #3A7DBD;
+                margin-left: 0.7em;
+            }
+
+            &:hover {
+                background-color: #3A7DBD;
+            }
+        }
+        .nav-icon-img {
+            transform: scale(0.9) translate(0, 5%);
+            fill: #3A7DBD;
+            margin: 0 0.5em;
+        }
+
+        .nav-icon-mail {
+            @include wh(30px, 30px);
+            fill: #3A7DBD;
+            margin-left: 0.5em;
+            margin-right: 1em;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.main-view {
+    @include wh(100%, 100vh);
+    @include flexbox(row);
+    @include ja(center, center);
+
+    .main-box {
+        @include flexbox(row);
+        @include ja(center, center);
+
+        .right-box {
+            @include flexbox(column);
+            @include ja(center, center);
+
+            .title {
+                display: inline-block;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 128px;
+                line-height: 139px;
+
+                background: linear-gradient(93.68deg, rgba(120, 188, 252, 0.8) 10.81%, rgba(144, 223, 214, 0.9) 81.1%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+    }
+
+    .down-button {
+        transform: scale(0.5);
+        position: absolute;
+        bottom: 1em;
+        left: 47%;
+        animation: buttom-move 0.6s ease-in-out 0s infinite alternate-reverse none;
+    }
+    @keyframes buttom-move {
+        from {
+            bottom: 1em;
+        }
+
+        to {
+            bottom: 0.6em;
+        }
+    }
+}
