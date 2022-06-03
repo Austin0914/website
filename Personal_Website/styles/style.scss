@@ -11,7 +11,7 @@ html{
 body{
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 
@@ -228,12 +228,142 @@ $bclor: rgb(12, 12, 12);
         width: 270px;
     }
     .line{
+        z-index: 3;
         position: absolute;
         height: 90vh;
         width: 4px;
         left: 350px;
         top: 20% ;
         background: linear-gradient(rgba(58, 125, 189, 0.15) ,rgba(97, 152, 203, 0.92) , rgba(58, 125, 189, 0.15));
+    }
+    .link-box{
+        position: absolute;
+        left: 400px;
+        top: 30%;
+        a{
+            text-decoration: none;
+            .link-box-content {
+                transition: all 1s;
+                margin-bottom: 0.3em;
+                font-size: 8em;
+                @include flexbox(row-reverse);
+                @include ja(start, center);
+        
+                .img-c {
+                    z-index: 2;
+                    @include wh(170px, 170px);
+                    object-fit: cover;
+                    transform: translate(0, 0.1em);
+                    opacity: 0;
+                }
+        
+                .text {
+                    position: relative;
+        
+                    span {
+                        color: #3A7DBD;
+                        margin: 0 0.4em;
+                    }
+        
+                    color:white;
+        
+                    &:hover+.img-c {
+                        animation: link-box-content-img-opacity 0.6s ease-in 0s 1 alternate forwards;
+                    }
+        
+                    &:hover {
+                        left: -0.4em;
+                        animation: link-box-content-move 0.2s ease-in 0s 1 alternate forwards;
+                    }
+                }
+        
+        
+                @keyframes link-box-content-move {
+                    from {
+                        left: 0;
+                    }
+        
+                    to {
+                        left: -0.4em;
+                        filter: blur(3px);
+                        transform: scale(0.9);
+                    }
+                }
+        
+                @keyframes link-box-content-img-opacity {
+                    from {
+                        opacity: 0;
+                    }
+        
+                    to {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+// .second-page{
+
+// }
+
+.third-page{
+    .line {
+        z-index: 3;
+        position: absolute;
+        height: 90vh;
+        width: 4px;
+        left: 350px;
+        top: 20%;
+        background: linear-gradient(rgba(58, 125, 189, 0.15), rgba(97, 152, 203, 0.92), rgba(58, 125, 189, 0.15));
+    }
+
+    .link-box {
+        position: absolute;
+        left: 400px;
+        top: 30%;
+
+        a {
+            text-decoration: none;
+
+            .link-box-content {
+                transition: all 1s;
+                margin-bottom: 0.3em;
+                font-size: 8em;
+                @include flexbox(row);
+                @include ja(start, center);
+
+                svg {
+                    z-index: 2;
+                    @include wh(140px, 140px);
+                    fill:#3A7DBD;
+                }
+
+                .text {
+                    position: relative;
+
+                    span {
+                        color: #3A7DBD;
+                        margin: 0 0.4em;
+                    }
+
+                    color:white;
+                }
+                &:hover {
+                    animation: link-box-content-color 0.5s ease-in 0s 1 alternate forwards;
+                }
+
+                @keyframes link-box-content-color {
+                    100%{
+                        background-color: #3A7DBD;
+                    }
+                }
+
+            }
+        }
+
     }
 }
 

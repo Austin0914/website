@@ -13,7 +13,6 @@ html {
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -333,6 +332,7 @@ body {
 }
 
 .first-page .line {
+  z-index: 3;
   position: absolute;
   height: 90vh;
   width: 4px;
@@ -340,6 +340,187 @@ body {
   top: 20%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 125, 189, 0.15)), color-stop(rgba(97, 152, 203, 0.92)), to(rgba(58, 125, 189, 0.15)));
   background: linear-gradient(rgba(58, 125, 189, 0.15), rgba(97, 152, 203, 0.92), rgba(58, 125, 189, 0.15));
+}
+
+.first-page .link-box {
+  position: absolute;
+  left: 400px;
+  top: 30%;
+}
+
+.first-page .link-box a {
+  text-decoration: none;
+}
+
+.first-page .link-box a .link-box-content {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  margin-bottom: 0.3em;
+  font-size: 8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-page .link-box a .link-box-content .img-c {
+  z-index: 2;
+  width: 170px;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: translate(0, 0.1em);
+          transform: translate(0, 0.1em);
+  opacity: 0;
+}
+
+.first-page .link-box a .link-box-content .text {
+  position: relative;
+  color: white;
+}
+
+.first-page .link-box a .link-box-content .text span {
+  color: #3A7DBD;
+  margin: 0 0.4em;
+}
+
+.first-page .link-box a .link-box-content .text:hover + .img-c {
+  -webkit-animation: link-box-content-img-opacity 0.6s ease-in 0s 1 alternate forwards;
+          animation: link-box-content-img-opacity 0.6s ease-in 0s 1 alternate forwards;
+}
+
+.first-page .link-box a .link-box-content .text:hover {
+  left: -0.4em;
+  -webkit-animation: link-box-content-move 0.2s ease-in 0s 1 alternate forwards;
+          animation: link-box-content-move 0.2s ease-in 0s 1 alternate forwards;
+}
+
+@-webkit-keyframes link-box-content-move {
+  from {
+    left: 0;
+  }
+  to {
+    left: -0.4em;
+    -webkit-filter: blur(3px);
+            filter: blur(3px);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@keyframes link-box-content-move {
+  from {
+    left: 0;
+  }
+  to {
+    left: -0.4em;
+    -webkit-filter: blur(3px);
+            filter: blur(3px);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes link-box-content-img-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes link-box-content-img-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.third-page .line {
+  z-index: 3;
+  position: absolute;
+  height: 90vh;
+  width: 4px;
+  left: 350px;
+  top: 20%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 125, 189, 0.15)), color-stop(rgba(97, 152, 203, 0.92)), to(rgba(58, 125, 189, 0.15)));
+  background: linear-gradient(rgba(58, 125, 189, 0.15), rgba(97, 152, 203, 0.92), rgba(58, 125, 189, 0.15));
+}
+
+.third-page .link-box {
+  position: absolute;
+  left: 400px;
+  top: 30%;
+}
+
+.third-page .link-box a {
+  text-decoration: none;
+}
+
+.third-page .link-box a .link-box-content {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  margin-bottom: 0.3em;
+  font-size: 8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.third-page .link-box a .link-box-content svg {
+  z-index: 2;
+  width: 140px;
+  height: 140px;
+  fill: #3A7DBD;
+}
+
+.third-page .link-box a .link-box-content .text {
+  position: relative;
+  color: white;
+}
+
+.third-page .link-box a .link-box-content .text span {
+  color: #3A7DBD;
+  margin: 0 0.4em;
+}
+
+.third-page .link-box a .link-box-content:hover {
+  -webkit-animation: link-box-content-color 0.5s ease-in 0s 1 alternate forwards;
+          animation: link-box-content-color 0.5s ease-in 0s 1 alternate forwards;
+}
+
+@-webkit-keyframes link-box-content-color {
+  100% {
+    background-color: #3A7DBD;
+  }
+}
+
+@keyframes link-box-content-color {
+  100% {
+    background-color: #3A7DBD;
+  }
 }
 
 .back-button {
