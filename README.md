@@ -36,3 +36,4 @@
 |5/27|[Day24](NOTES/Day24.md)|Personal Website-first page animation|[Personal-Web-Code](Personal_Website)|
 |5/30|[Day25](NOTES/Day25.md)|Personal Website-first page animation+introuduction page|[Personal-Web-Code](Personal_Website)|
 |6/2|[Day26](NOTES/Day26.md)|Personal Website-build all html strcture -animation boost|[Personal-Web-Code](Personal_Website)|
+|6/4|[Day27](NOTES/Day27.md)|Personal Website-introduce-page-completed|[Personal-Web-Code](Personal_Website)|
