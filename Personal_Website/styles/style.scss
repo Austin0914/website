@@ -11,7 +11,7 @@ html{
 body{
     height: 100%;
     width: 100%;
-    // overflow: hidden;
+    overflow: hidden;
 }
 
 
@@ -305,9 +305,78 @@ $bclor: rgb(12, 12, 12);
     }
 }
 
-// .second-page{
+.second-page{
+    position: relative;
+    .new-article{
+        position: absolute;
+        top:17%;
+        @include wh(80%,80%);
+        @include flexbox(column);
+        @include ja(center,center);
+        .blog-box{
+            @include wh(70%,40%);
+            @include flexbox(row);
+            @include ja(space-around, center);
+            margin-bottom: 2%;
+        }
+        .projects-box {
+            @include wh(70%, 40%);
+            @include flexbox(row);
+            @include ja(space-around, center);
+        }
+        .article {
+            @include wh(47%, 90%);
+            @include flexbox(row);
+            @include ja(center, center);
+            background-color: rgba(217, 217, 217, 0.1);
+            border-radius: 20px;
+            padding: 0.6em;
 
-// }
+            img {
+                @include wh(240px, 240px);
+                border-radius: 20px;
+                object-fit: cover;
+            }
+
+            .intro {
+                margin-left: 0.6em;
+                @include flexbox(column);
+                @include ja(start, start);
+                @include wh(auto, 240px);
+
+                .title {
+                    font-family: 'Barlow', sans-serif;
+                    ;
+                    color: white;
+                    font-size: 2em;
+                    font-weight: 900;
+                    margin-bottom: 0.2em;
+                }
+
+                .content {
+                    color: white;
+                    font-size: 1.5em;
+                    font-weight: 600;
+                }
+            }
+
+            .none {
+                @include flexbox(row);
+                @include ja(center, center);
+
+                svg {
+                    transform: scale(5);
+                    opacity: 0.1;
+                }
+            }
+            transition: all 0.5s;
+            &:hover{
+                background-color: #747474;
+            }
+        }
+        
+    }
+}
 
 .third-page{
     .line {
