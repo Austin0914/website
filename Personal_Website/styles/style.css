@@ -13,7 +13,6 @@ html {
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -488,7 +487,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 2%;
 }
 
 .second-page .new-article .projects-box {
@@ -508,9 +506,15 @@ body {
           align-items: center;
 }
 
-.second-page .new-article .article {
-  width: 47%;
-  height: 90%;
+.second-page .new-article a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.second-page .new-article a .article {
+  width: 500px;
+  height: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,7 +535,7 @@ body {
   transition: all 0.5s;
 }
 
-.second-page .new-article .article img {
+.second-page .new-article a .article img {
   width: 240px;
   height: 240px;
   border-radius: 20px;
@@ -539,7 +543,7 @@ body {
      object-fit: cover;
 }
 
-.second-page .new-article .article .intro {
+.second-page .new-article a .article .intro {
   margin-left: 0.6em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -558,7 +562,7 @@ body {
   height: 240px;
 }
 
-.second-page .new-article .article .intro .title {
+.second-page .new-article a .article .intro .title {
   font-family: 'Barlow', sans-serif;
   color: white;
   font-size: 2em;
@@ -566,13 +570,13 @@ body {
   margin-bottom: 0.2em;
 }
 
-.second-page .new-article .article .intro .content {
+.second-page .new-article a .article .intro .content {
   color: white;
   font-size: 1.5em;
   font-weight: 600;
 }
 
-.second-page .new-article .article .none {
+.second-page .new-article a .article .none {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,13 +592,13 @@ body {
           align-items: center;
 }
 
-.second-page .new-article .article .none svg {
+.second-page .new-article a .article .none svg {
   -webkit-transform: scale(5);
           transform: scale(5);
   opacity: 0.1;
 }
 
-.second-page .new-article .article:hover {
+.second-page .new-article a .article:hover {
   background-color: #747474;
 }
 
@@ -693,5 +697,21 @@ body {
 
 .back-button:hover {
   opacity: 70%;
+}
+
+.bottom-nav {
+  width: 100%;
+  height: 20px;
+  color: gray;
+  text-align: center;
+  font-size: 1em;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+}
+
+.bottom-nav a:visited {
+  color: gray;
 }
 /*# sourceMappingURL=style.css.map */

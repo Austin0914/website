@@ -46,8 +46,6 @@ body {
     background-color: #ffffff00;
 }
 
-
-
 @mixin wh($w, $h) {
     width: $w;
     height: $h;
@@ -62,6 +60,7 @@ body {
     justify-content: $j;
     align-items: $a;
 }
+
 .nav {
     @include wh(100%, 60px);
     position: absolute;
@@ -82,6 +81,7 @@ body {
         font-size: 1.2em;
         @include flexbox(row);
         @include ja(center, center);
+
         .nav-icon {
             transition: all 0.3s;
             margin: 0px 0.5em;
@@ -101,6 +101,7 @@ body {
                 background-color: #3A7DBD;
             }
         }
+
         .nav-icon-img {
             transform: scale(0.9) translate(0, 5%);
             fill: #3A7DBD;
@@ -113,6 +114,7 @@ body {
             margin-left: 0.5em;
             margin-right: 1em;
         }
+
         a {
             text-decoration: none;
         }
@@ -155,6 +157,7 @@ body {
         left: 47%;
         animation: buttom-move 0.6s ease-in-out 0s infinite alternate-reverse none;
     }
+
     @keyframes buttom-move {
         from {
             bottom: 1em;
@@ -163,5 +166,79 @@ body {
         to {
             bottom: 0.6em;
         }
+    }
+}
+
+.first-page,
+.second-page,
+.third-page {
+    position: relative;
+    @include flexbox(row);
+    @include ja(center, center);
+    @include wh(100%, 110%);
+}
+
+.first-page {
+    position: relative;
+
+    .left-box {
+        @include flexbox(row);
+        @include ja(center, center);
+        position: absolute;
+        left: 3em;
+
+        .left-li {
+            @include flexbox(column);
+            @include ja(center, center);
+            @include wh(200px, 80%);
+
+            a {
+                @include wh(100%, auto);
+                margin: 0.1em 0;
+                text-decoration: none;
+                text-align: end;
+                font-size: 2.5em;
+
+                .now {
+                    background: linear-gradient(93.68deg, rgba(120, 188, 252, 0.8) 10.81%, rgba(144, 223, 214, 0.9) 81.1%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    color: transparent;
+                }
+
+                &:visited {
+                    color: white;
+                }
+            }
+        }
+
+        .line {
+            margin-left: 3em;
+            height: 90vh;
+            width: 4px;
+            background: linear-gradient(rgba(58, 125, 189, 0.15), rgba(97, 152, 203, 0.92), rgba(58, 125, 189, 0.15));
+        }
+    }
+
+}
+
+.back-button {
+    position: fixed;
+    opacity: 15%;
+    right: 1.5em;
+    bottom: 1em;
+    z-index: 1;
+    background-color: #30689c;
+    @include wh(50px, 50px);
+    border-radius: 50%;
+
+    svg {
+        fill: white;
+        transform: rotate(180deg) scale(0.45) translate(22px, 39px);
+    }
+
+    &:hover {
+        opacity: 70%;
     }
 }
