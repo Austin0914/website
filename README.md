@@ -37,4 +37,4 @@
 |5/30|[Day25](NOTES/Day25.md)|Personal Website-first page animation+introuduction page|[Personal-Web-Code](Personal_Website)|
 |6/2|[Day26](NOTES/Day26.md)|Personal Website-build all html strcture -animation boost|[Personal-Web-Code](Personal_Website)|
 |6/4|[Day27](NOTES/Day27.md)|Personal Website-introduce-page-completed|[Personal-Web-Code](Personal_Website)|
-|6/6|[Day28](NOTES/Day28.md)|Personal Website-ui design in figma completed 80% & blog pages build|[Personal-Web-Code](Personal_Website)|
+|6/5|[Day28](NOTES/Day28.md)|Personal Website-ui design in figma completed 80% & blog pages build|[Personal-Web-Code](Personal_Website)|
