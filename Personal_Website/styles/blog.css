@@ -219,4 +219,47 @@ body {
     bottom: 0.6em;
   }
 }
+
+.index .head-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.index .head-intro .text-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.index .head-intro .text-intro .blog-name {
+  font-weight: 900;
+  font-size: 2em;
+  color: white;
+}
+
+.index .head-intro .text-intro .blog-intro {
+  font-size: 1.5em;
+  color: #6A6A6B;
+}
 /*# sourceMappingURL=blog.css.map */

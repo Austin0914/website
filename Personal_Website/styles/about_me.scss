@@ -169,58 +169,51 @@ body {
     }
 }
 
-.first-page,
-.second-page,
-.third-page {
+.page {
     position: relative;
     @include flexbox(row);
     @include ja(center, center);
     @include wh(100%, 110%);
 }
 
-.first-page {
-    position: relative;
+.left-bar{
+    position: sticky;
+    top:3em;
+    @include flexbox(row);
+    @include ja(center,center);
+    .line {
+        margin-left: 3em;
+        height: 90vh;
+        width: 4px;
+        background: linear-gradient(rgba(58, 125, 189, 0.15), rgba(97, 152, 203, 0.92), rgba(58, 125, 189, 0.15));
+    }
 
-    .left-box {
-        @include flexbox(row);
+    .text {
+        @include flexbox(column);
         @include ja(center, center);
-        position: absolute;
-        left: 3em;
+        @include wh(200px, 80%);
 
-        .left-li {
-            @include flexbox(column);
-            @include ja(center, center);
-            @include wh(200px, 80%);
+        a {
+            @include wh(100%, auto);
+            margin: 0.1em 0;
+            text-decoration: none;
+            text-align: end;
+            font-size: 2.5em;
+            color: #6A6A6B;
 
-            a {
-                @include wh(100%, auto);
-                margin: 0.1em 0;
-                text-decoration: none;
-                text-align: end;
-                font-size: 2.5em;
-
-                .now {
-                    background: linear-gradient(93.68deg, rgba(120, 188, 252, 0.8) 10.81%, rgba(144, 223, 214, 0.9) 81.1%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                    color: transparent;
-                }
-
-                &:visited {
-                    color: white;
-                }
+            &:visited {
+                color: #6A6A6B;
             }
         }
 
-        .line {
-            margin-left: 3em;
-            height: 90vh;
-            width: 4px;
-            background: linear-gradient(rgba(58, 125, 189, 0.15), rgba(97, 152, 203, 0.92), rgba(58, 125, 189, 0.15));
+        .active {
+            background: linear-gradient(93.68deg, rgba(120, 188, 252, 0.8) 10.81%, rgba(144, 223, 214, 0.9) 81.1%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
         }
     }
-
 }
 
 .back-button {

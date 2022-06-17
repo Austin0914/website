@@ -220,9 +220,7 @@ body {
   }
 }
 
-.first-page,
-.second-page,
-.third-page {
+.page {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,11 +239,10 @@ body {
   height: 110%;
 }
 
-.first-page {
-  position: relative;
-}
-
-.first-page .left-box {
+.left-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,11 +256,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  left: 3em;
 }
 
-.first-page .left-box .left-li {
+.left-bar .line {
+  margin-left: 3em;
+  height: 90vh;
+  width: 4px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 125, 189, 0.15)), color-stop(rgba(97, 152, 203, 0.92)), to(rgba(58, 125, 189, 0.15)));
+  background: linear-gradient(rgba(58, 125, 189, 0.15), rgba(97, 152, 203, 0.92), rgba(58, 125, 189, 0.15));
+}
+
+.left-bar .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,33 +284,26 @@ body {
   height: 80%;
 }
 
-.first-page .left-box .left-li a {
+.left-bar .text a {
   width: 100%;
   height: auto;
   margin: 0.1em 0;
   text-decoration: none;
   text-align: end;
   font-size: 2.5em;
+  color: #6A6A6B;
 }
 
-.first-page .left-box .left-li a .now {
+.left-bar .text a:visited {
+  color: #6A6A6B;
+}
+
+.left-bar .text .active {
   background: linear-gradient(93.68deg, rgba(120, 188, 252, 0.8) 10.81%, rgba(144, 223, 214, 0.9) 81.1%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-}
-
-.first-page .left-box .left-li a:visited {
-  color: white;
-}
-
-.first-page .left-box .line {
-  margin-left: 3em;
-  height: 90vh;
-  width: 4px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 125, 189, 0.15)), color-stop(rgba(97, 152, 203, 0.92)), to(rgba(58, 125, 189, 0.15)));
-  background: linear-gradient(rgba(58, 125, 189, 0.15), rgba(97, 152, 203, 0.92), rgba(58, 125, 189, 0.15));
 }
 
 .back-button {
