@@ -16,7 +16,6 @@ body {
     width: 100%;
     background-color: $bclor;
     font-family: Arial, Helvetica, sans-serif;
-    // overflow: hidden;
 }
 
 
@@ -167,22 +166,102 @@ body {
         }
     }
 }
-.index{
-    .head-intro{
+.box{
+    @include flexbox(column);
+    @include ja(center,center);
+    margin-top: 5em;
+    .index {
+        @include wh(60%, auto);
         @include flexbox(column);
-        @include ja(center,start);
-        .text-intro{
+
+        .head-intro {
             @include flexbox(column);
-            @include ja(center,start);
-            .blog-name{
-                font-weight: 900;
-                font-size:2em;
-                color:white;
+            @include ja(center, start);
+
+            .text-intro {
+                @include flexbox(column);
+                @include ja(center, start);
+
+                .blog-name {
+                    font-weight: 900;
+                    font-size: 2em;
+                    color: white;
+                    margin-bottom: 0.3em;
+                }
+
+                .blog-intro {
+                    font-size: 1.5em;
+                    color: #6A6A6B;
+                    margin-bottom: 2em;
+                }
             }
-            .blog-intro{
-                font-size:1.5em;
-                color:#6A6A6B;
+            .blog-bottom-nav{
+                margin-bottom: 2em;
+                a{
+                    text-decoration: none;
+                    color:white;
+                    font-size:2em;
+                    font-weight: 700;
+                    margin-right: 1em;
+                    padding: 0.3em 1em;
+                    border-radius: 0.5em;
+                    color:#464646;
+                    background-color: #6A6A6B;
+                }
+                .active {
+                    color:white;
+                    background: linear-gradient(265.49deg, rgba(97, 152, 203, 0.92) 22.66%, rgba(169, 255, 188, 0.65) 85.36%);
+                }
             }
         }
+        .article{
+            @include flexbox(column);
+            @include ja(center, center);
+            .letter{
+                @include wh(100%,400px);
+                border-radius: 2em;
+                padding: 2.5em;
+                margin: 1.5em 0;
+                background-color: rgba(217, 217, 217, 0.1);
+                font-weight: 700;
+                &:active {
+                    transition: all 0.3s;
+                    transform: scale(0.975);
+                }
+                .letter-title{
+                    color:white;
+                    font-size:2em;
+                }
+                .letter-time{
+                    color:#3D3D3E;
+                    margin: 0.5em 0;
+                }
+                .letter-intro{
+                    color:#6A6A6B;
+                    font-size:1.5em;
+                }
+            }
+            
+        }
+    }
+}
+
+.back-button {
+    position: fixed;
+    opacity: 15%;
+    right: 1.5em;
+    bottom: 1em;
+    z-index: 1;
+    background-color: #30689c;
+    @include wh(50px, 50px);
+    border-radius: 50%;
+
+    svg {
+        fill: white;
+        transform: rotate(180deg) scale(0.45) translate(22px, 39px);
+    }
+
+    &:hover {
+        opacity: 70%;
     }
 }

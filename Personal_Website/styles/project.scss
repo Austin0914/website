@@ -167,3 +167,24 @@ body {
         }
     }
 }
+
+.first-page{
+    @include wh(100%, 100%);
+    @include flexbox(row);
+    @include ja(center, center);
+    .none {
+        @include flexbox(column);
+        @include ja(center, center);
+
+        svg {
+            transform: scale(5);
+            opacity: 0.5;
+        }
+        .di{
+            color:lightslategrey;
+            margin-top: 3em;
+            opacity: 0.5;
+            font-weight: 900;
+        }
+    }
+}
