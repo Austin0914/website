@@ -338,7 +338,11 @@ body {
           align-items: center;
 }
 
-.box .index .article .letter {
+.box .index .article a {
+  text-decoration: none;
+}
+
+.box .index .article a .letter {
   width: 100%;
   height: 400px;
   border-radius: 2em;
@@ -348,25 +352,25 @@ body {
   font-weight: 700;
 }
 
-.box .index .article .letter:active {
+.box .index .article a .letter:active {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transform: scale(0.985);
           transform: scale(0.985);
 }
 
-.box .index .article .letter .letter-title {
+.box .index .article a .letter .letter-title {
   color: white;
   font-size: 2em;
 }
 
-.box .index .article .letter .letter-time {
+.box .index .article a .letter .letter-time {
   color: #3D3D3E;
   font-size: 1.5em;
   margin: 0.5em 0;
 }
 
-.box .index .article .letter .letter-intro {
+.box .index .article a .letter .letter-intro {
   color: #6A6A6B;
   font-size: 1.5em;
 }

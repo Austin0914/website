@@ -220,32 +220,38 @@ body {
         .article{
             @include flexbox(column);
             @include ja(center, center);
-            .letter{
-                @include wh(100%,400px);
-                border-radius: 2em;
-                padding: 2.5em;
-                margin: 1.5em 0;
-                background-color: rgba(217, 217, 217, 0.1);
-                font-weight: 700;
-                &:active {
-                    transition: all 0.3s;
-                    transform: scale(0.985);
-                }
-                .letter-title{
-                    color:white;
-                    font-size:2em;
-                }
-                .letter-time{
-                    color:#3D3D3E;
-                    font-size:1.5em;
-                    margin: 0.5em 0;
-                }
-                .letter-intro{
-                    color:#6A6A6B;
-                    font-size:1.5em;
+            a{
+                text-decoration: none;
+                .letter {
+                    @include wh(100%, 400px);
+                    border-radius: 2em;
+                    padding: 2.5em;
+                    margin: 1.5em 0;
+                    background-color: rgba(217, 217, 217, 0.1);
+                    font-weight: 700;
+            
+                    &:active {
+                        transition: all 0.3s;
+                        transform: scale(0.985);
+                    }
+            
+                    .letter-title {
+                        color: white;
+                        font-size: 2em;
+                    }
+            
+                    .letter-time {
+                        color: #3D3D3E;
+                        font-size: 1.5em;
+                        margin: 0.5em 0;
+                    }
+            
+                    .letter-intro {
+                        color: #6A6A6B;
+                        font-size: 1.5em;
+                    }
                 }
             }
-            
         }
     }
 }
