@@ -193,6 +193,13 @@ body {
   color: transparent;
 }
 
+.main-view .main-box .right-box .title-2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 2em;
+  font-weight: 700;
+}
+
 .main-view .down-button {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
@@ -238,7 +245,7 @@ body {
 }
 
 .box .index {
-  width: 60%;
+  width: 50%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,13 +290,13 @@ body {
 
 .box .index .head-intro .text-intro .blog-name {
   font-weight: 900;
-  font-size: 2em;
+  font-size: 3em;
   color: white;
   margin-bottom: 0.3em;
 }
 
 .box .index .head-intro .text-intro .blog-intro {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #6A6A6B;
   margin-bottom: 2em;
 }
@@ -344,8 +351,8 @@ body {
 .box .index .article .letter:active {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-transform: scale(0.975);
-          transform: scale(0.975);
+  -webkit-transform: scale(0.985);
+          transform: scale(0.985);
 }
 
 .box .index .article .letter .letter-title {
@@ -355,6 +362,7 @@ body {
 
 .box .index .article .letter .letter-time {
   color: #3D3D3E;
+  font-size: 1.5em;
   margin: 0.5em 0;
 }
 

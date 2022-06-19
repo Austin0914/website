@@ -45,8 +45,6 @@ body {
     background-color: #ffffff00;
 }
 
-
-
 @mixin wh($w, $h) {
     width: $w;
     height: $h;
@@ -145,6 +143,11 @@ body {
                 background-clip: text;
                 color: transparent;
             }
+            .title-2{
+                align-self: flex-start;
+                font-size: 2em;
+                font-weight: 700;
+            }
         }
     }
 
@@ -171,7 +174,7 @@ body {
     @include ja(center,center);
     margin-top: 5em;
     .index {
-        @include wh(60%, auto);
+        @include wh(50%, auto);
         @include flexbox(column);
 
         .head-intro {
@@ -184,13 +187,13 @@ body {
 
                 .blog-name {
                     font-weight: 900;
-                    font-size: 2em;
+                    font-size: 3em;
                     color: white;
                     margin-bottom: 0.3em;
                 }
 
                 .blog-intro {
-                    font-size: 1.5em;
+                    font-size: 2em;
                     color: #6A6A6B;
                     margin-bottom: 2em;
                 }
@@ -226,7 +229,7 @@ body {
                 font-weight: 700;
                 &:active {
                     transition: all 0.3s;
-                    transform: scale(0.975);
+                    transform: scale(0.985);
                 }
                 .letter-title{
                     color:white;
@@ -234,6 +237,7 @@ body {
                 }
                 .letter-time{
                     color:#3D3D3E;
+                    font-size:1.5em;
                     margin: 0.5em 0;
                 }
                 .letter-intro{
