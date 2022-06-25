@@ -150,5 +150,69 @@ p{
         @include wh(50%, auto);
         @include flexbox(column);
         background-color: rgba(217, 217, 217, 0.1);
+        .tag{
+            margin-top: 1em;
+            .tag-btn{
+                @include wh(100px,60px);
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    .tag-text {
+                        padding: 0.3em 0;
+                        color:white;
+                        background-color: rgba(217, 217, 217, 0.1);
+                        border-radius: 1em;
+                        font-size: 1.7em;
+                        font-weight:500;
+                    }
+                }
+                &:active{
+                    transform: scale(0.97);
+                }
+            }
+            
+        }
+    }
+}
+.change-button{
+    @include flexbox(row);
+    @include ja(center,center);
+    margin-top: 2em;
+    a{
+        text-decoration: none;
+        .btn,
+        .btn-2 {
+            @include flexbox(row);
+            @include ja(center, center);
+            @include wh(170px, 50px);
+            background-color: white;
+            border-radius: 1em;
+            margin: 0 1em;
+            padding: 0 0.5em;
+    
+            svg {
+                @include wh(60px, 60px);
+                transform: scale(0.4) translate(0, -5px);
+            }
+    
+            .text {
+                color: black;
+                font-size: 1.3em;
+                font-family: 'Barlow', sans-serif;
+                font-weight: 900;
+            }
+    
+            &:active {
+                transform: scale(0.97);
+            }
+        }
+    
+        .btn-2 {
+            svg {
+                transform: rotate(180deg) scale(0.4) translate(0, -5px);
+                fill: white;
+                @include wh(60px, 60px);
+            }
+        }
     }
 }

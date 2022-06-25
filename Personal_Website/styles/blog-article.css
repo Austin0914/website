@@ -185,4 +185,106 @@ p {
           flex-direction: column;
   background-color: rgba(217, 217, 217, 0.1);
 }
+
+.box .index .tag {
+  margin-top: 1em;
+}
+
+.box .index .tag .tag-btn {
+  width: 100px;
+  height: 60px;
+  text-align: center;
+}
+
+.box .index .tag .tag-btn a {
+  text-decoration: none;
+}
+
+.box .index .tag .tag-btn a .tag-text {
+  padding: 0.3em 0;
+  color: white;
+  background-color: rgba(217, 217, 217, 0.1);
+  border-radius: 1em;
+  font-size: 1.7em;
+  font-weight: 500;
+}
+
+.box .index .tag .tag-btn:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.change-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+}
+
+.change-button a {
+  text-decoration: none;
+}
+
+.change-button a .btn,
+.change-button a .btn-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 50px;
+  background-color: white;
+  border-radius: 1em;
+  margin: 0 1em;
+  padding: 0 0.5em;
+}
+
+.change-button a .btn svg,
+.change-button a .btn-2 svg {
+  width: 60px;
+  height: 60px;
+  -webkit-transform: scale(0.4) translate(0, -5px);
+          transform: scale(0.4) translate(0, -5px);
+}
+
+.change-button a .btn .text,
+.change-button a .btn-2 .text {
+  color: black;
+  font-size: 1.3em;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+}
+
+.change-button a .btn:active,
+.change-button a .btn-2:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.change-button a .btn-2 svg {
+  -webkit-transform: rotate(180deg) scale(0.4) translate(0, -5px);
+          transform: rotate(180deg) scale(0.4) translate(0, -5px);
+  fill: white;
+  width: 60px;
+  height: 60px;
+}
 /*# sourceMappingURL=blog-article.css.map */
